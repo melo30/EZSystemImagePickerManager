@@ -13,7 +13,7 @@
 
 3.初始化并传入当前viewController
 
-- (EZSystemImagePickerManager *)manager {
+ - (EZSystemImagePickerManager *)manager {
 
     if (!_manager) {
     
