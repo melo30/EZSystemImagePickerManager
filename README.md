@@ -7,7 +7,9 @@
 
 1.拉下来 #import "EZSystemImagePickerManager.h"
 
+
 2.全局变量 @property (nonatomic, strong) EZSystemImagePickerManager *manager;
+
 
 3.初始化并传入当前viewController
 - (EZSystemImagePickerManager *)manager {
@@ -17,9 +19,12 @@
     return _manager;
 }
 
+
 4.在弹出按钮点击事件里
+
   [self.manager quickAlertSheetPickerImage];
+  
   [self.manager setDidSelectImageBlock:^(UIImage * _Nonnull image) {
-            //得到的image回调
+  //得到的image回调
             
-        }];
+   }];
