@@ -12,12 +12,19 @@
 
 
 3.初始化并传入当前viewController
+
 - (EZSystemImagePickerManager *)manager {
+
     if (!_manager) {
+    
         _manager = [[EZSystemImagePickerManager alloc] initWithViewController:self];
+        
     }
+    
     return _manager;
+    
 }
+
 
 
 4.在弹出按钮点击事件里
